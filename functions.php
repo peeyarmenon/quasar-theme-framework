@@ -32,31 +32,6 @@ if ( ! isset( $content_width ) )
 	$content_width = 604;
 
 /**
- * Adds support for a custom header image.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Custom functions that act independently of the theme templates.
- */
-require get_template_directory() . '/inc/extras.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/inc/jetpack.php';
-
-/**
  * Varahi only works in WordPress 3.6 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
@@ -172,3 +147,28 @@ add_action( 'wp_enqueue_scripts', 'varahi_scripts_styles' );
  * Registers widget areas.
  */
 require get_template_directory() . '/inc/sidebar-inits.php';
+
+/**
+ * Adds support for a custom header image.
+ */
+require get_template_directory() . '/inc/custom-header.php';
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * Custom functions that act independently of the theme templates.
+ */
+require get_template_directory() . '/inc/extras.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Load Jetpack compatibility file.
+ */
+require get_template_directory() . '/inc/jetpack.php';
