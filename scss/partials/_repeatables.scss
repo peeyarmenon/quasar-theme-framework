@@ -1,0 +1,264 @@
+/**
+ * 2.0 Repeatable Patterns
+ * ----------------------------------------------------------------------------
+ */
+
+.genericon:before,
+.menu-toggle:after,
+.featured-post:before,
+.date a:before,
+.entry-meta .author a:before,
+.format-audio .entry-content:before,
+.comments-link a:before,
+.tags-links a:first-child:before,
+.categories-links a:first-child:before,
+.edit-link a:before,
+.attachment .entry-title:before,
+.attachment-meta:before,
+.attachment-meta a:before,
+.comment-awaiting-moderation:before,
+.comment-reply-link:before,
+.comment-reply-login:before,
+.comment-reply-title small a:before,
+.bypostauthor > .comment-body .fn:before,
+.error404 .page-title:before {
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font: normal 16px/1 Genericons;
+	vertical-align: text-bottom;
+}
+
+/* Clearing floats */
+.clearfix,
+.clear,
+.attachment .entry-header,
+.site-footer .widget-area,
+.entry-content,
+.page-content,
+.navigation,
+.nav-links,
+.gallery,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url,
+.comment-body {
+	@include clearfix;
+}
+
+/* Assistive text */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	@include border-radius($border-radius-small);
+	@include box-shadow(0 0 2px 2px rgba(0, 0, 0, 0.6));
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	height: auto;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	text-decoration: none;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* Form fields, general styles first. */
+button,
+input,
+textarea {
+	border: 2px solid #bac8d4; // $input-border; // #d4d0ba;
+	font-family: inherit;
+	padding: 5px;
+}
+
+input,
+textarea {
+	color: $text-color; // #141412;
+}
+
+input:focus,
+textarea:focus {
+	border: 2px solid $input-active-border; // #c3c0ab;
+	outline: 0;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {	
+	border: none;	
+	display: inline-block;
+	padding: 11px 24px 10px;
+	text-decoration: none;
+	color: $btn-primary-color; // #fff;
+	background: $btn-primary-bg; // #e05d22; /* Old browsers */
+	@include background-image(linear-gradient($btn-primary-bg, #127cd9));
+	border-bottom: 3px solid $btn-primary-border; // #b93207;
+	@include border-radius(2px);
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+	background: #3195ed; // #ed6a31; /* Old browsers */
+	@include background-image(linear-gradient(#3195ed, #278ce5));
+	outline: none;
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+	background: #127cd9; // #d94412; /* Old browsers */
+	@include background-image(linear-gradient(#127cd9, $btn-primary-bg));
+	border: none;
+	border-top: 3px solid $btn-primary-border; // #b93207;
+	padding: 10px 24px 11px;
+}
+
+.post-password-required input[type="submit"] {
+	padding: 7px 24px 4px;
+	vertical-align: bottom;
+}
+
+.post-password-required input[type="submit"]:active {
+	padding: 5px 24px 6px;
+}
+
+/* Placeholder text color -- selectors need to be separate to work. */
+::-webkit-input-placeholder {
+	color: $input-color-placeholder; // #7d7b6d;
+}
+
+:-moz-placeholder {
+	color: $input-color-placeholder; // #7d7b6d;
+}
+
+::-moz-placeholder {
+	color: $input-color-placeholder; // #7d7b6d;
+}
+
+:-ms-input-placeholder {
+	color: $input-color-placeholder; // #7d7b6d;
+}
+
+/*
+ * Responsive images
+ *
+ * Fluid images for posts, comments, and widgets
+ */
+.entry-content img,
+.entry-summary img,
+.comment-content img,
+.widget img,
+.wp-caption {
+	max-width: 100%;
+}
+
+/* Make sure images with WordPress-added height and width attributes are scaled correctly. */
+.entry-content img,
+.entry-summary img,
+.comment-content img[height],
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+	height: auto;
+}
+
+img.size-full,
+img.size-large,
+img.wp-post-image {
+	height: auto;
+	max-width: 100%;
+}
+
+/* Make sure videos and embeds fit their containers. */
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+
+/* Override the Twitter embed fixed width. */
+.entry-content .twitter-tweet-rendered {
+	max-width: 100% !important;
+}
+
+/* Images */
+.alignleft {
+	@include float-left;
+}
+
+.alignright {
+	@include float-right;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignleft {
+	margin: 5px 20px 5px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 10px 5px 0;
+}
+
+img.alignright {
+	margin: 5px 0 5px 20px;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 5px 10px;
+}
+
+img.aligncenter {
+	margin: 5px auto;
+}
+
+img.alignnone {
+	margin: 5px 0;
+}
+
+.wp-caption .wp-caption-text,
+.entry-caption,
+.gallery-caption {
+	color: #0e1922; // #220e10;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 300;
+}
+
+img.wp-smiley,
+.rsswidget img {
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+.wp-caption.alignleft + ul,
+.wp-caption.alignleft + ol  {
+	list-style-position: inside;
+}

@@ -1,0 +1,39 @@
+/* Chat */
+.format-chat {
+	background-color: #a6caea; // #eadaa6;
+}
+
+.format-chat .entry-title {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.format-chat .entry-meta a,
+.format-chat .entry-content a {
+	color: #194872; // #722d19;
+}
+
+.format-chat .entry-meta .date a:before {
+	content: "\f108";
+	margin-right: 2px;
+}
+
+.format-chat .entry-meta .author {
+	display: none;
+}
+
+.format-chat .chat {
+	margin: 0;
+}
+
+.format-chat .chat .chat-timestamp {
+	color: #194872; // #722d19;
+	float: right;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 5px 10px 0;
+}
+
+.format-chat .chat .fn {
+	font-style: normal;
+}

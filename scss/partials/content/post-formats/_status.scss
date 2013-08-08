@@ -1,0 +1,89 @@
+/* Status */
+.format-status {
+	background-color: #194872; // #722d19;
+	padding: 0;
+}
+
+.format-status .entry-content,
+.format-status .entry-meta {
+	padding-left: 35px;
+	position: relative;
+}
+
+.format-status .entry-content a {
+	color: #a6caea; // #eadaa6;
+}
+
+.format-status .entry-meta a {
+	color: #e7f0f7; // #f7f5e7;
+}
+
+.sidebar .format-status .entry-content,
+.sidebar .format-status .entry-meta {
+	padding-left: 95px;
+}
+
+.format-status .entry-content:before,
+.format-status .entry-meta:before {
+	background: url(../images/dotted-line.png) repeat-y left bottom;
+	background-size: 4px 4px;
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	left: 10px;
+	top: 0;
+	width: 1px;
+}
+
+.sidebar .format-status .entry-content:before,
+.sidebar .format-status .entry-meta:before {
+	left: 70px;
+}
+
+.format-status .categories-links,
+.format-status .tags-links {
+	display: none;
+}
+
+/* Ensures the dots in the dot background are in lockstep. */
+.format-status .entry-meta:before {
+	background-position: left top;
+}
+
+.format-status .entry-content {
+	color: #e7f0f7; // #f7f5e7;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 300;
+	padding-bottom: 30px;
+	padding-top: 40px;
+	position: relative;
+}
+
+.format-status .entry-content p:first-child:before {
+	background-color: rgba(0, 0, 0, 0.65);
+	content: "";
+	height: 3px;
+	margin-top: 13px;
+	position: absolute;
+	left: 4px;
+	width: 13px;
+}
+
+.sidebar .format-status .entry-content > p:first-child:before {
+	left: 64px;
+}
+
+.format-status .entry-content p:last-child {
+	margin-bottom: 0;
+}
+
+.format-status .entry-meta {
+	margin-top: 0;
+	padding-bottom: 40px;
+}
+
+.format-status .entry-meta .date a:before {
+	content: "\f105";
+}

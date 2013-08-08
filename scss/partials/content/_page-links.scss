@@ -1,0 +1,54 @@
+/* Page links */
+.page-links {
+	clear: both;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 2.2;
+	margin: 20px 0;
+	text-transform: uppercase;
+}
+
+.page-links a,
+.page-links > span {
+	background: $pagination-active-bg; // #fff;
+	border: 1px solid $pagination-active-border; // #fff;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: $pagination-active-color;
+}
+
+.format-status .entry-content .page-links a,
+.format-gallery .entry-content .page-links a,
+.format-chat .entry-content .page-links a,
+.format-quote .entry-content .page-links a,
+.page-links a {
+	background: $pagination-bg; // #e63f2a;
+	border: 1px solid $pagination-border; // #e63f2a;
+	color: $pagination-color; // #fff;
+}
+
+.format-gallery .entry-content .page-links a:hover,
+.format-audio .entry-content .page-links a:hover,
+.format-status .entry-content .page-links a:hover,
+.format-video .entry-content .page-links a:hover,
+.format-chat .entry-content .page-links a:hover,
+.format-quote .entry-content .page-links a:hover,
+.page-links a:hover {
+	background: $pagination-active-bg; // #fff;
+	color: $pagination-active-color; // #e63f2a;
+	border: 1px solid $pagination-active-border;
+}
+
+.format-status .entry-content .page-links > span,
+.format-quote .entry-content .page-links > span {
+	background: none;
+}
+
+.page-links .page-links-title {
+	background: transparent;
+	border: none;
+	margin-right: 20px;
+	padding: 0;
+	color: $text-color;
+}

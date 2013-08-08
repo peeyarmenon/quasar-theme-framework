@@ -1,0 +1,46 @@
+/**
+ * 5.3 Entry Content
+ * ----------------------------------------------------------------------------
+ */
+
+.entry-content {
+	@include hyphens(auto);
+	@include hyphenation;
+}
+
+.entry-content a,
+.comment-content a {
+	color: $link-color; // #bc360a;
+}
+
+.entry-content a:hover,
+.comment-content a:hover {
+	color: $link-hover-color; // #ea9629;
+}
+
+.entry-content blockquote {
+	font-size: 24px;
+}
+
+.entry-content blockquote cite,
+.entry-content blockquote small {
+	font-size: 16px;
+}
+
+.entry-content img.alignleft,
+.entry-content .wp-caption.alignleft {
+	margin-left: -60px;
+}
+
+.entry-content img.alignright,
+.entry-content .wp-caption.alignright {
+	margin-right: -60px;
+}
+
+footer.entry-meta {
+	margin-top: 24px;
+}
+
+.format-standard footer.entry-meta {
+	margin-top: 0;
+}

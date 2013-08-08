@@ -1,0 +1,29 @@
+/* Link */
+.format-link {
+	background-color: #e7f0f7; // #f7f5e7;
+}
+
+.blog .format-link:first-of-type,
+.single .format-link:first-of-type {
+	box-shadow: inset 0 2px 2px rgba(105, 141, 173, .2); // rgba(173, 165, 105, 0.2);
+}
+
+.format-link .entry-header,
+.format-link .entry-content p:last-child {
+	margin-bottom: 0;
+}
+
+.format-link .entry-title {
+	color: #086fca; // #ca3c08;
+	display: inline;
+	font: 300 italic 20px $font-family-base;
+	margin-right: 20px;
+}
+
+.format-link .entry-title a {
+	color: #0a69bc; // #bc360a;
+}
+
+.format-link div.entry-meta {
+	display: inline;
+}

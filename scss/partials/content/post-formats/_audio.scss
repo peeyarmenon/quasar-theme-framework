@@ -1,0 +1,45 @@
+/* Audio */
+.format-audio {
+	background-color: #2f8bdb; // adjust-hue(tint($brand-color, 75), 60); // #db572f;
+}
+
+.format-audio .entry-title {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.format-audio .entry-content:before {
+	content: "\f109";
+	float: left;
+	font-size: 64px;
+	position: relative;
+	top: 4px;
+}
+
+.format-audio .entry-content a,
+.format-audio .entry-meta a {
+	color: #f3f7fb; // #fbfaf3;
+	&:hover {
+		color: darken(#2f8bdb, 80); 
+	}
+}
+
+.format-audio .audio-content {
+	background: url(../images/dotted-line.png) repeat-y left top;
+	background-size: 4px 4px;
+	float: right;
+	padding-left: 35px;
+	width: 80%;
+	width: -webkit-calc(100% - 85px);
+	width:         calc(100% - 85px);
+}
+
+.format-audio .wp-audio-shortcode {
+	height: 30px !important; /* Override mediaelement.js style */
+	margin: 20px 0;
+	max-width: 400px !important; /* Override mediaelement.js style */
+}
+
+.format-audio audio {
+	max-width: 100% !important; /* Avoid player width overflow. */
+}

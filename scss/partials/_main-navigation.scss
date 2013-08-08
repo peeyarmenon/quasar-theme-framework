@@ -1,0 +1,125 @@
+/**
+ * 4.2 Navigation
+ * ----------------------------------------------------------------------------
+ */
+.main-navigation {
+	clear: both;
+	margin: 0 auto;
+	max-width: 1080px;
+	min-height: 45px;
+	position: relative;
+}
+
+ul.nav-menu,
+div.nav-menu > ul {
+	margin: 0;
+	padding: 0 40px 0 0;
+}
+
+.nav-menu li {
+	display: inline-block;
+	position: relative;
+}
+
+.nav-menu li a {
+	color: #121314; // $navbar-link-color; // #141412;
+	display: block;
+	font-size: 15px;
+	line-height: 1;
+	padding: 15px 20px;
+	text-decoration: none;
+}
+
+.nav-menu li:hover > a,
+.nav-menu li a:hover {
+	background-color: #0e1922; // $navbar-link-hover-bg; // #220e10;
+	color: #fff; // $navbar-link-hover-color; // #fff;
+}
+
+.nav-menu .sub-menu,
+.nav-menu .children {
+	background-color: #0e1922; // $dropdown-bg; // #220e10;
+	border: 2px solid #e7f0f7; // $dropdown-border; // #f7f5e7;
+	border-top: 0;
+	display: none;
+	padding: 0;
+	position: absolute;
+	left: -2px;
+	z-index: 99999;
+}
+
+.nav-menu .sub-menu ul,
+.nav-menu .children ul {
+	border-left: 0;
+	left: 100%;
+	top: 0;
+}
+
+ul.nav-menu ul a,
+.nav-menu ul ul a {
+	color: #fff; // $dropdown-link-color; // #fff
+	margin: 0;
+	width: 200px;
+}
+
+ul.nav-menu ul a:hover,
+.nav-menu ul ul a:hover {
+	background-color: #2f8bdb; // $dropdown-link-hover-bg; // #db572f;
+	// color: $dropdown-link-hover-color;
+}
+
+ul.nav-menu li:hover > ul,
+.nav-menu ul li:hover > ul {
+	display: block;
+}
+
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
+	color: #0a69bc; // $navbar-link-active-color; // #bc360a;
+	// background: $navbar-link-active-bg;
+	font-style: italic;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+/* Navbar */
+.navbar {
+	background-color: #e7f0f7; // $navbar-bg; // #f7f5e7;
+	margin: 0 auto;
+	// max-width: 1600px;
+	width: 100%;
+}
+
+.navbar .search-form {
+	position: absolute;
+	right: 20px;
+	top: 1px;
+}
+
+.navbar .search-field {
+	background-color: transparent;
+	background-image: url(../images/search-icon.png);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+	border: none;
+	cursor: pointer;
+	height: 37px;
+	margin: 3px 0;
+	padding: 0 0 0 34px;
+	position: relative;
+	@include transition(width 400ms ease, background 400ms ease);
+	width: 0;
+}
+
+.navbar .search-field:focus {
+	background-color: #fff;
+	border: 2px solid #abb8c3; // $input-active-border; // #c3c0ab;
+	cursor: text;
+	outline: 0;
+	width: 230px;
+}

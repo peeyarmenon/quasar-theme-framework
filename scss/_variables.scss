@@ -1,0 +1,187 @@
+// typography
+
+// colors
+$brand-color: #086fca;
+
+$header-bg: white;
+$header-link: $brand-color;
+$nav-link: #cccccc;
+$nav-link-hover: $header-link;
+
+$sidebar-bg: #fafafa;
+$megafooter-bg: #161717;
+$footer-bg: #0f0f0f;
+
+// Grays
+// -------------------------
+
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 60%) !default;   // #999
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+// Brand colors
+// -------------------------
+
+$brand-primary:         $brand-color !default; // default --> #428bca !default;
+$brand-success:         #5cb85c !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+$brand-info:            #5bc0de !default;
+
+// Scaffolding
+// -------------------------
+$text-color:            #121314 !default; // #141412; // $gray-dark !default;
+
+// Links
+// -------------------------
+
+$link-color:            $brand-primary !default;
+$link-hover-color:      #2990ea; // darken($link-color, 15%) !default;
+$link-visited-color:	#045eac !default;
+
+// Typography
+// -------------------------
+
+$font-family-sans-serif:  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       'Abril Fatface', Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+$font-family-alt:		  $font-family-serif !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
+$font-size-mini:          ceil($font-size-base * 0.75) !default; // ~11px
+
+$line-height-base:        1.428571429 !default; // 20/14
+$line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~20px
+
+$headings-font-weight:    400 !default;
+$headings-line-height:    1.1 !default;
+
+// Components
+// -------------------------
+// Based on 14px font-size and 1.428 line-height (~20px to start)
+
+$padding-base-vertical:          8px !default;
+$padding-base-horizontal:        12px !default;
+
+$padding-large-vertical:         14px !default;
+$padding-large-horizontal:       16px !default;
+
+$padding-small-vertical:         5px !default;
+$padding-small-horizontal:       10px !default;
+
+$border-radius-base:             4px !default;
+$border-radius-large:            6px !default;
+$border-radius-small:            3px !default;
+
+$component-active-bg:            $brand-primary !default;
+
+// Tables
+// -------------------------
+
+$table-bg:                           transparent !default; // overall background-color
+$table-bg-accent:                    #f9f9f9 !default; // for striping
+$table-bg-hover:                     #f5f5f5 !default; // for hover
+
+$table-border-color:                 #ddd !default; // table and cell border
+
+// Buttons
+// -------------------------
+
+$btn-default-color:              #fff !default;
+$btn-default-bg:                 #a7a9aa !default;
+$btn-default-border:             $btn-default-bg !default;
+
+$btn-primary-color:              $btn-default-color !default;
+$btn-primary-bg:                 #2287e0 !default; // $brand-primary !default;
+$btn-primary-border:             #0766b9 !default; // $btn-primary-bg !default;
+
+// Forms
+// -------------------------
+
+$input-bg:                       #fff !default;
+$input-bg-disabled:              $gray-lighter !default;
+
+$input-border:                   tint(desaturate($brand-color, 40), 70) !default; // #ccc !default;
+$input-border-radius:            $border-radius-base !default;
+
+$input-color-placeholder:        #6d767d !default; // $gray-light !default;
+
+$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2)) !default;
+$input-height-large:             ($line-height-computed + ($padding-large-vertical * 2)) !default;
+$input-height-small:             ($line-height-computed + ($padding-small-vertical * 2)) !default;
+
+$form-actions-bg:                #f5f5f5 !default;
+
+$input-active-border:            #abb8c3 !default; // #ccc !default;
+
+// Dropdowns
+// -------------------------
+
+$dropdown-bg:                    #fff !default;
+$dropdown-border:                rgba(0,0,0,.15) !default;
+$dropdown-divider-top:           #e5e5e5 !default;
+$dropdown-divider-bottom:        #fff !default;
+
+$dropdown-link-active-color:     #fff !default;
+$dropdown-link-active-bg:        $component-active-bg !default;
+
+$dropdown-link-color:            $gray-dark !default;
+$dropdown-link-hover-color:      #fff !default;
+$dropdown-link-hover-bg:         $dropdown-link-active-bg !default;
+
+// Navbar
+// -------------------------
+
+// Basics of a navbar
+$navbar-height:                    45px !default; // default --> 50px
+$navbar-color:                     #777 !default;
+$navbar-bg:                        #eee !default;
+
+// Navbar links
+$navbar-link-color:                $nav-link !default; // default --> #777
+$navbar-link-hover-color:          $nav-link-hover !default; // default --> #333
+$navbar-link-hover-bg:             transparent !default;
+$navbar-link-active-color:         $nav-link-hover !default; // default --> #555
+$navbar-link-active-bg:            transparent !default; // default --> darken($navbar-bg, 10%)
+
+$navbar-link-disabled-color:       #ccc !default;
+$navbar-link-disabled-bg:          transparent !default;
+
+// Pagination
+// -------------------------
+
+$pagination-bg:                        #fff !default;
+$pagination-border:                    #ddd !default;
+$pagination-color:					   $brand-color !default;
+
+$pagination-active-bg:                 $brand-color !default; // #f5f5f5 !default;
+$pagination-active-border:			   shade($brand-color, 10) !default;
+$pagination-active-color:              #fff !default; // $brand-color !default; // #f5f5f5 !default;
+
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Tiny screen / phone
+$screen-tiny:                480px !default;
+$screen-phone:               $screen-tiny !default;
+
+// Small screen / tablet
+$screen-small:               768px !default;
+$screen-tablet:              $screen-small !default;
+
+// Medium screen / desktop
+$screen-medium:              992px !default;
+$screen-desktop:             $screen-medium !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-small-max:           ($screen-medium - 1) !default;
+$screen-tablet-max:          $screen-small-max !default;
+
+// Large screen / wide desktop
+$screen-large:               1200px !default;
+$screen-large-desktop:       $screen-large !default;

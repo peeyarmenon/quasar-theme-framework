@@ -1,0 +1,126 @@
+/**
+ * 5.6 Attachments
+ * ----------------------------------------------------------------------------
+ */
+
+.attachment .hentry {
+	background-color: #cedce8; // #e8e5ce;
+	margin: 0;
+	padding: 0;
+}
+
+.attachment .entry-header {
+	margin-bottom: 0;
+	max-width: 1040px;
+	padding: 30px 0;
+}
+
+.attachment .entry-title {
+	display: inline-block;
+	@include float-left;
+	font: 300 italic 30px $font-family-base;
+	margin: 0;
+}
+
+.attachment .entry-title:before {
+	content: "\f416";
+	font-size: 32px;
+	margin-right: 10px;
+}
+
+.attachment .entry-meta {
+	clear: none;
+	color: inherit;
+	@include float-right;
+	max-width: 604px;
+	padding: 9px 0 0;
+	text-align: right;
+}
+
+.hentry.attachment:not(.image-attachment) .entry-meta {
+	max-width: 104px;
+}
+
+.attachment footer.entry-meta,
+.single-attachment .site-main .sidebar-container {
+	display: none;
+}
+
+.attachment-meta:before {
+	content: "\f307";
+}
+
+.full-size-link a:before {
+	content: "\f402";
+}
+
+.full-size-link:before {
+	content: none;
+}
+
+.attachment .entry-meta a,
+.attachment .entry-meta .edit-link:before,
+.attachment .full-size-link:before {
+	color: shade($brand-color, 10); // #ca3c08;
+}
+
+.attachment .entry-content {
+	background-color: #fff;
+	max-width: 100%;
+	padding: 40px 0;
+}
+
+.image-navigation {
+	margin: 0 auto;
+	max-width: 1040px;
+	position: relative;
+}
+
+.image-navigation a:hover {
+	text-decoration: none;
+}
+
+.image-navigation .nav-previous,
+.image-navigation .nav-next {
+	position: absolute;
+	top: 50px;
+}
+
+.image-navigation .nav-previous {
+	left: 0;
+}
+
+.image-navigation .nav-next {
+	right: 0;
+}
+
+.image-navigation .meta-nav {
+	font-size: 32px;
+	font-weight: 300;
+	vertical-align: -4px;
+}
+
+.attachment .entry-attachment,
+.attachment p.attachment {
+	margin: 0 auto;
+	max-width: 724px;
+	text-align: center;
+}
+
+.attachment .entry-attachment .attachment {
+	display: inline-block;
+}
+
+.attachment .entry-caption {
+	text-align: left;
+}
+
+.attachment .entry-description {
+	margin: 20px auto 0;
+	max-width: 604px;
+}
+
+.attachment .entry-caption p:last-child,
+.attachment .entry-description p:last-child {
+	margin: 0;
+}
