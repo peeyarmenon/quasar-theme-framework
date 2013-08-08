@@ -23,7 +23,7 @@ function varahi_custom_header_setup() {
 	$args = array(
 		// Text color and image (empty to use none).
 		'default-text-color'     => '0e1922',
-		'default-image'          => '%s/images/headers/circle.png',
+		'default-image'          => '%s/images/headers/rainbow.png',
 
 		// Set height and width, with a maximum value for the width.
 		'height'                 => 230,
@@ -42,6 +42,11 @@ function varahi_custom_header_setup() {
 	 * %s is a placeholder for the theme template directory URI.
 	 */
 	register_default_headers( array(
+		'rainbow' => array(
+			'url'           => '%s/images/headers/rainbow.png',
+			'thumbnail_url' => '%s/images/headers/rainbow-thumbnail.png',
+			'description'   => _x( 'Rainbow Stripes', 'header image description', 'varahi' )
+		),
 		'3dwall' => array(
 			'url'           => '%s/images/headers/3dwall.png',
 			'thumbnail_url' => '%s/images/headers/3dwall-thumbnail.png',
@@ -66,11 +71,6 @@ function varahi_custom_header_setup() {
 			'url'           => '%s/images/headers/mystical.png',
 			'thumbnail_url' => '%s/images/headers/mystical-thumbnail.png',
 			'description'   => _x( 'Mystical', 'header image description', 'varahi' )
-		),
-		'rainbow' => array(
-			'url'           => '%s/images/headers/rainbow.png',
-			'thumbnail_url' => '%s/images/headers/rainbow-thumbnail.png',
-			'description'   => _x( 'Rainbow Stripes', 'header image description', 'varahi' )
 		),
 		'scifi' => array(
 			'url'           => '%s/images/headers/scifi.png',
