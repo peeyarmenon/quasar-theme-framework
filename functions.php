@@ -52,6 +52,11 @@ require get_template_directory() . '/inc/extras.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Load Jetpack compatibility file.
+ */
+require get_template_directory() . '/inc/jetpack.php';
+
+/**
  * Varahi only works in WordPress 3.6 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
