@@ -19,23 +19,68 @@ function quasar_initialize_theme_options() {
 		'general'							// Page on which to add this section of options
 	);
 
-	// Next, we will introduce the fields for toggling the visibility of content elements.
+	// Adding Fields
+	// Add Field One
 	add_settings_field(
-		'unique_field_id',						// ID used to identify the field throughout the theme
-		'Field Label',							// The label to the left of the option interface element
-		'quasar_toggle_unique_field_id_callback',	// The name of the function responsible for rendering the option interface
-		'general',							// The page on which this option will be displayed
-		'general_settings_section',			// The name of the section to which this field belongs
-		array(								// The array of arguments to pass to the callback. In this case, just a description.
-			'The field description.'
+		'field_one_id',
+		// ID used to identify the field throughout the theme
+		'Field One Label',
+		// The label to the left of the option interface element
+		'quasar_toggle_field_one_id_callback',
+		// The name of the function responsible for rendering the option interface
+		'general',
+		// The page on which this option will be displayed
+		'general_settings_section',
+		// The name of the section to which this field belongs
+		array(
+			// The array of arguments to pass to the callback. In this case, just a description.
+			'The field-one description.'
 		)
+	);
+	// Add Field Two
+	add_settings_field(
+		'field_two_id',
+		'Field Two Label',
+		'quasar_toggle_field_two_id_callback',
+		'general',
+		'general_settings_section',
+		array(
+			'The field-two description.'
+		)
+	);
+	// Add Field Three
+	add_settings_field(
+		'field_three_id',
+		'Field Three Label',
+		'quasar_toggle_field_three_id_callback',
+		'general',
+		'general_settings_section',
+		array(
+			'The field-three description.'
+		)
+	);
+
+	// Registering Fields
+	// register field-one
+	register_setting(
+		'general',
+		'field_one_id'
+	);
+	// register field-one
+	register_setting(
+		'general',
+		'field_two_id'
+	);
+	// register field-one
+	register_setting(
+		'general',
+		'field_three_id'
 	);
 } // end quasar_initialize_theme_options
 
 /* ------------------------------------------------------------------------ *
  * Section Callbacks
  * ------------------------------------------------------------------------ */ 
-
 /**
  * This function provides a simple description for the General Options page. 
  *
@@ -49,19 +94,32 @@ function quasar_general_options_callback() {
 /* ------------------------------------------------------------------------ * 
  * Field Callbacks 
  * ------------------------------------------------------------------------ */
- /**
- * This is the callback function for rendering the checkbox for the above registered field.
- * 
- * It accepts an array of arguments and expects the first element in the array to be the description
- * to be displayed next to the checkbox.
- */
-function quasar_toggle_unique_field_id_callback($args) {
+ /* Callback functions for rendering the fields for the registered fields. */
+ // field_one callback
+function quasar_toggle_field_one_id_callback($args) {
 	// Note the ID and the name attribute of the element should match that of the ID in the call to add_settings_field
-	$html = '<input type="checkbox" id="unique_field_id" name="unique_field_id" value="1" ' . checked(1, get_option('unique_field_id'), false) . '/>';
+	$html = '<input type="checkbox" id="field_one_id" name="field_one_id" value="1" ' . checked(1, get_option('field_one_id'), false) . '/>';
 	
 	// Here, we will take the first argument of the array and add it to a label next to the checkbox
-	$html .= '<label for="unique_field_id"> '  . $args[0] . '</label>';
+	$html .= '<label for="field_one_id"> '  . $args[0] . '</label>';
 	
-	echo $html;
+	echo $html;	
+}
+
+// field_two callback
+function quasar_toggle_field_two_id_callback($args) {
+	$html = '<input type="checkbox" id="field_two_id" name="field_two_id" value="1" ' . checked(1, get_option('field_two_id'), false) . '/>';
+
+	$html .= '<label for="field_two_id"> '  . $args[0] . '</label>';
+
+	echo $html;	
+}
+
+// field_three callback
+function quasar_toggle_field_three_id_callback($args) {
+	$html = '<input type="checkbox" id="field_three_id" name="field_three_id" value="1" ' . checked(1, get_option('field_three_id'), false) . '/>';
+
+	$html .= '<label for="field_three_id"> '  . $args[0] . '</label>';
 	
-} // end quasar_toggle_unique_field_id_callback
+	echo $html;	
+}
