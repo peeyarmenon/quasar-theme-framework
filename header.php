@@ -31,13 +31,23 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<?php
+		$general_options = get_option( 'quasartheme_general_options' );
+		$social_options = get_option( 'quasartheme_social_options' );
+	?>
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
-			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</a>
-		</header><!-- #masthead -->
+		<?php if ( $general_options[ 'show_header' ] ) { ?>
+			<header id="masthead" class="site-header" role="banner">
+				<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				</a>
+			</header><!-- #masthead -->
+		<?php } // end if ?>
+
+		<?php echo $social_options['twitter'] ? '<a href="' . $social_options['twitter'] . '">Twitter</a>' : ''; ?>
+		<?php echo $social_options['facebook'] ? '<a href="' . $social_options['facebook'] . '">Facebook</a>' : ''; ?>
+		<?php echo $social_options['googleplus'] ? '<a href="' . $social_options['googleplus'] . '">Google+</a>' : ''; ?>
 
 		<div id="navbar" class="navbar">
 			<nav id="site-navigation" class="navigation main-navigation" role="navigation">
