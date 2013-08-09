@@ -1,5 +1,5 @@
 /**
- * Functionality specific to Varahi.
+ * Functionality specific to Quasar Theme.
  *
  * Provides helper functions to enhance the theme experience.
  */

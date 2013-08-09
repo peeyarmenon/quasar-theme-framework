@@ -3,8 +3,8 @@
  * The default template for displaying content. Used for both single and index/archive/search.
  *
  * @package WordPress
- * @subpackage Varahi
- * @since Varahi 1.0
+ * @subpackage Quasar Theme
+ * @since Quasar Theme 1.0
  */
 ?>
 
@@ -25,8 +25,8 @@
 		<?php endif; // is_single() ?>
 
 		<div class="entry-meta">
-			<?php varahi_entry_meta(); ?>
-			<?php edit_post_link( __( 'Edit', 'varahi' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php quasartheme_entry_meta(); ?>
+			<?php edit_post_link( __( 'Edit', 'quasartheme' ), '<span class="edit-link">', '</span>' ); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -36,15 +36,15 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'varahi' ) ); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'varahi' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'quasartheme' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'quasartheme' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
 	<footer class="entry-meta">
 		<?php if ( comments_open() && ! is_single() ) : ?>
 			<div class="comments-link">
-				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'varahi' ) . '</span>', __( 'One comment so far', 'varahi' ), __( 'View all % comments', 'varahi' ) ); ?>
+				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'quasartheme' ) . '</span>', __( 'One comment so far', 'quasartheme' ), __( 'View all % comments', 'quasartheme' ) ); ?>
 			</div><!-- .comments-link -->
 		<?php endif; // comments_open() ?>
 

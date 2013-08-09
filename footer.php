@@ -6,8 +6,8 @@
  * #main and #page div elements.
  *
  * @package WordPress
- * @subpackage Varahi
- * @since Varahi 1.0
+ * @subpackage Quasar Theme
+ * @since Quasar Theme 1.0
  */
 ?>
 
@@ -16,8 +16,8 @@
 			<?php get_sidebar( 'main' ); ?>
 
 			<div class="site-info">
-				<?php do_action( 'varahi_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'varahi' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'varahi' ); ?>"><?php printf( __( 'Proudly powered by %s', 'varahi' ), 'WordPress' ); ?></a>
+				<?php do_action( 'quasartheme_credits' ); ?>
+				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'quasartheme' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'quasartheme' ); ?>"><?php printf( __( 'Proudly powered by %s', 'quasartheme' ), 'WordPress' ); ?></a>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->

@@ -5,8 +5,8 @@
  * If no active widgets in this sidebar, it will be hidden completely.
  *
  * @package WordPress
- * @subpackage Varahi
- * @since Varahi 1.0
+ * @subpackage Quasar Theme
+ * @since Quasar Theme 1.0
  */
 
 if ( is_active_sidebar( 'sidebar-1' ) ) : ?>

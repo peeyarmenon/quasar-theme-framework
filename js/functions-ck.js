@@ -1,5 +1,5 @@
 /**
- * Functionality specific to Varahi.
+ * Functionality specific to Quasar Theme.
  *
  * Provides helper functions to enhance the theme experience.
  */(function(e){var t=e("body"),n=e(window);e(function(){if(t.is(".sidebar")){var r=e("#secondary .widget-area"),i=0==r.length?-40:r.height(),s=e("#tertiary .widget-area").height()-e("#content").height()-i;s>0&&n.innerWidth()>999&&e("#colophon").css("margin-top",s+"px")}});(function(){var t=e("#site-navigation"),n,r;if(!t)return;n=t.find(".menu-toggle");if(!n)return;r=t.find(".nav-menu");if(!r||!r.children().length){n.hide();return}e(".menu-toggle").on("click.twentythirteen",function(){t.toggleClass("toggled-on")})})();n.on("hashchange.twentythirteen",function(){var e=document.getElementById(location.hash.substring(1));if(e){/^(?:a|select|input|button|textarea)$/i.test(e.tagName)||(e.tabIndex=-1);e.focus()}});if(e.isFunction(e.fn.masonry)){var r=t.is(".sidebar")?228:245;e("#secondary .widget-area").masonry({itemSelector:".widget",columnWidth:r,gutterWidth:20,isRTL:t.is(".rtl")})}})(jQuery);

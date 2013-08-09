@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Varahi 1.0\n"
+"Project-Id-Version: Quasar Theme 1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/twentythirteen\n"
 "POT-Creation-Date: 2013-08-01 18:14:18+00:00\n"
 "MIME-Version: 1.0\n"

@@ -3,8 +3,8 @@
  * The template for displaying posts in the Audio post format.
  *
  * @package WordPress
- * @subpackage Varahi
- * @since Varahi 1.0
+ * @subpackage Quasar Theme
+ * @since Quasar Theme 1.0
  */
 ?>
 
@@ -21,14 +21,14 @@
 
 	<div class="entry-content">
 		<div class="audio-content">
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'varahi' ) ); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'varahi' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'quasartheme' ) ); ?>
+			<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'quasartheme' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 		</div><!-- .audio-content -->
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
-		<?php varahi_entry_meta(); ?>
-		<?php edit_post_link( __( 'Edit', 'varahi' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php quasartheme_entry_meta(); ?>
+		<?php edit_post_link( __( 'Edit', 'quasartheme' ), '<span class="edit-link">', '</span>' ); ?>
 
 		<?php if ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
 			<?php get_template_part( 'author-bio' ); ?>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Varahi functions and definitions.
+ * Quasar Theme functions and definitions.
  *
  * Sets up the theme and provides some helper functions, which are used in the
  * theme as custom template tags. Others are attached to action and filter
@@ -20,26 +20,26 @@
  * see http://codex.wordpress.org/Plugin_API
  *
  * @package WordPress
- * @subpackage Varahi
- * @since Varahi 1.0
+ * @subpackage Quasar Theme
+ * @since Quasar Theme 1.0
  */
 
 /**
  * Sets up the content width value based on the theme's design.
- * @see varahi_content_width() for template-specific adjustments.
+ * @see quasartheme_content_width() for template-specific adjustments.
  */
 if ( ! isset( $content_width ) )
 	$content_width = 604;
 
 /**
- * Varahi only works in WordPress 3.6 or later.
+ * Quasar Theme only works in WordPress 3.6 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
 	require get_template_directory() . '/inc/back-compat.php';
 
 /**
  * Sets up theme defaults and registers the various WordPress features that
- * Varahi supports.
+ * Quasar Theme supports.
  *
  * @uses load_theme_textdomain() For translation/localization support.
  * @uses add_editor_style() To add Visual Editor stylesheets.
@@ -48,26 +48,26 @@ if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
  * @uses register_nav_menu() To add support for a navigation menu.
  * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
- * @since Varahi 1.0
+ * @since Quasar Theme 1.0
  *
  * @return void
  */
-function varahi_setup() {
+function quasartheme_setup() {
 	/*
-	 * Makes Varahi available for translation.
+	 * Makes Quasar Theme available for translation.
 	 *
 	 * Translations can be added to the /languages/ directory.
-	 * If you're building a theme based on Varahi, use a find and
-	 * replace to change 'varahi' to the name of your theme in all
+	 * If you're building a theme based on Quasar Theme, use a find and
+	 * replace to change 'quasartheme' to the name of your theme in all
 	 * template files.
 	 */
-	load_theme_textdomain( 'varahi', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'quasartheme', get_template_directory() . '/languages' );
 
 	/*
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, icons, and column width.
 	 */
-	add_editor_style( array( 'css/editor-style.css', 'fonts/genericons.css', varahi_fonts_url() ) );
+	add_editor_style( array( 'css/editor-style.css', 'fonts/genericons.css', quasartheme_fonts_url() ) );
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
@@ -85,7 +85,7 @@ function varahi_setup() {
 	) );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menu( 'primary', __( 'Navigation Menu', 'varahi' ) );
+	register_nav_menu( 'primary', __( 'Navigation Menu', 'quasartheme' ) );
 
 	/*
 	 * This theme uses a custom image size for featured images, displayed on
@@ -100,21 +100,21 @@ function varahi_setup() {
 	/**
 	 * Setup the WordPress core custom background feature.
 	 */
-	add_theme_support( 'custom-background', apply_filters( 'varahi_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'quasartheme_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
-add_action( 'after_setup_theme', 'varahi_setup' );
+add_action( 'after_setup_theme', 'quasartheme_setup' );
 
 /**
  * Enqueues scripts and styles for front end.
  *
- * @since Varahi 1.0
+ * @since Quasar Theme 1.0
  *
  * @return void
  */
-function varahi_scripts_styles() {
+function quasartheme_scripts_styles() {
 	// Adds JavaScript to pages with the comment form to support sites with
 	// threaded comments (when in use).
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
@@ -124,24 +124,24 @@ function varahi_scripts_styles() {
 	if ( is_active_sidebar( 'sidebar-1' ) )
 		wp_enqueue_script( 'jquery-masonry' );
 
-	// Loads JavaScript file with functionality specific to Varahi.
-	wp_enqueue_script( 'varahi-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '2013-07-18', true );
+	// Loads JavaScript file with functionality specific to Quasar Theme.
+	wp_enqueue_script( 'quasartheme-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '2013-07-18', true );
 
 	// Add Open Sans and Bitter fonts, used in the main stylesheet.
-	wp_enqueue_style( 'varahi-fonts', varahi_fonts_url(), array(), null );
+	wp_enqueue_style( 'quasartheme-fonts', quasartheme_fonts_url(), array(), null );
 
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
 
 	// Loads our main stylesheet.
-	// wp_enqueue_style( 'varahi-style', get_stylesheet_uri(), array(), '2013-07-18' );
-	wp_enqueue_style( 'varahi-style', get_template_directory_uri() . '/css/style.css', array(), '' );
+	// wp_enqueue_style( 'quasartheme-style', get_stylesheet_uri(), array(), '2013-07-18' );
+	wp_enqueue_style( 'quasartheme-style', get_template_directory_uri() . '/css/style.css', array(), '' );
 
 	// Loads the Internet Explorer specific stylesheet.
-	wp_enqueue_style( 'varahi-ie', get_template_directory_uri() . '/css/ie.css', array( 'varahi-style' ), '2013-07-18' );
-	wp_style_add_data( 'varahi-ie', 'conditional', 'lt IE 9' );
+	wp_enqueue_style( 'quasartheme-ie', get_template_directory_uri() . '/css/ie.css', array( 'quasartheme-style' ), '2013-07-18' );
+	wp_style_add_data( 'quasartheme-ie', 'conditional', 'lt IE 9' );
 }
-add_action( 'wp_enqueue_scripts', 'varahi_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'quasartheme_scripts_styles' );
 
 /**
  * Registers widget areas.

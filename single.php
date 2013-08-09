@@ -3,8 +3,8 @@
  * The Template for displaying all single posts.
  *
  * @package WordPress
- * @subpackage Varahi
- * @since Varahi 1.0
+ * @subpackage Quasar Theme
+ * @since Quasar Theme 1.0
  */
 
 get_header(); ?>
@@ -16,7 +16,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', get_post_format() ); ?>
-				<?php varahi_post_nav(); ?>
+				<?php quasartheme_post_nav(); ?>
 				<?php comments_template(); ?>
 
 			<?php endwhile; ?>

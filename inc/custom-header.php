@@ -1,25 +1,25 @@
 <?php
 /**
- * Implements a custom header for Varahi.
+ * Implements a custom header for Quasar Theme.
  * See http://codex.wordpress.org/Custom_Headers
  *
  * @package WordPress
- * @subpackage Varahi
- * @since Varahi 1.0
+ * @subpackage Quasar Theme
+ * @since Quasar Theme 1.0
  */
 
 /**
  * Sets up the WordPress core custom header arguments and settings.
  *
  * @uses add_theme_support() to register support for 3.4 and up.
- * @uses varahi_header_style() to style front-end.
- * @uses varahi_admin_header_style() to style wp-admin form.
- * @uses varahi_admin_header_image() to add custom markup to wp-admin form.
+ * @uses quasartheme_header_style() to style front-end.
+ * @uses quasartheme_admin_header_style() to style wp-admin form.
+ * @uses quasartheme_admin_header_image() to add custom markup to wp-admin form.
  * @uses register_default_headers() to set up the bundled header images.
  *
- * @since Varahi 1.0
+ * @since Quasar Theme 1.0
  */
-function varahi_custom_header_setup() {
+function quasartheme_custom_header_setup() {
 	$args = array(
 		// Text color and image (empty to use none).
 		'default-text-color'     => '0e1922',
@@ -30,9 +30,9 @@ function varahi_custom_header_setup() {
 		'width'                  => 1920, // 1600,
 
 		// Callbacks for styling the header and the admin preview.
-		'wp-head-callback'       => 'varahi_header_style',
-		'admin-head-callback'    => 'varahi_admin_header_style',
-		'admin-preview-callback' => 'varahi_admin_header_image',
+		'wp-head-callback'       => 'quasartheme_header_style',
+		'admin-head-callback'    => 'quasartheme_admin_header_style',
+		'admin-preview-callback' => 'quasartheme_admin_header_image',
 	);
 
 	add_theme_support( 'custom-header', $args );
@@ -45,64 +45,64 @@ function varahi_custom_header_setup() {
 		'rainbow' => array(
 			'url'           => '%s/images/headers/rainbow.png',
 			'thumbnail_url' => '%s/images/headers/rainbow-thumbnail.png',
-			'description'   => _x( 'Rainbow Stripes', 'header image description', 'varahi' )
+			'description'   => _x( 'Rainbow Stripes', 'header image description', 'quasartheme' )
 		),
 		'3dwall' => array(
 			'url'           => '%s/images/headers/3dwall.png',
 			'thumbnail_url' => '%s/images/headers/3dwall-thumbnail.png',
-			'description'   => _x( '3D Wall', 'header image description', 'varahi' )
+			'description'   => _x( '3D Wall', 'header image description', 'quasartheme' )
 		),
 		'bokeh' => array(
 			'url'           => '%s/images/headers/bokeh.png',
 			'thumbnail_url' => '%s/images/headers/bokeh-thumbnail.png',
-			'description'   => _x( 'Bokeh', 'header image description', 'varahi' )
+			'description'   => _x( 'Bokeh', 'header image description', 'quasartheme' )
 		),
 		'fluidwave' => array(
 			'url'           => '%s/images/headers/fluidwave.png',
 			'thumbnail_url' => '%s/images/headers/fluidwave-thumbnail.png',
-			'description'   => _x( 'Fluid Wave', 'header image description', 'varahi' )
+			'description'   => _x( 'Fluid Wave', 'header image description', 'quasartheme' )
 		),
 		'glassy' => array(
 			'url'           => '%s/images/headers/glassy.png',
 			'thumbnail_url' => '%s/images/headers/glassy-thumbnail.png',
-			'description'   => _x( 'Glassy', 'header image description', 'varahi' )
+			'description'   => _x( 'Glassy', 'header image description', 'quasartheme' )
 		),
 		'mystical' => array(
 			'url'           => '%s/images/headers/mystical.png',
 			'thumbnail_url' => '%s/images/headers/mystical-thumbnail.png',
-			'description'   => _x( 'Mystical', 'header image description', 'varahi' )
+			'description'   => _x( 'Mystical', 'header image description', 'quasartheme' )
 		),
 		'scifi' => array(
 			'url'           => '%s/images/headers/scifi.png',
 			'thumbnail_url' => '%s/images/headers/scifi-thumbnail.png',
-			'description'   => _x( 'Sci Fi', 'header image description', 'varahi' )
+			'description'   => _x( 'Sci Fi', 'header image description', 'quasartheme' )
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'varahi_custom_header_setup' );
+add_action( 'after_setup_theme', 'quasartheme_custom_header_setup' );
 
 /**
  * Loads our special font CSS files.
  *
- * @since Varahi 1.0
+ * @since Quasar Theme 1.0
  */
-function varahi_custom_header_fonts() {
+function quasartheme_custom_header_fonts() {
 	// Add Open Sans and Bitter fonts.
-	wp_enqueue_style( 'varahi-fonts', varahi_fonts_url(), array(), null );
+	wp_enqueue_style( 'quasartheme-fonts', quasartheme_fonts_url(), array(), null );
 
 	// Add Genericons font.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
 }
-add_action( 'admin_print_styles-appearance_page_custom-header', 'varahi_custom_header_fonts' );
+add_action( 'admin_print_styles-appearance_page_custom-header', 'quasartheme_custom_header_fonts' );
 
 /**
  * Styles the header text displayed on the blog.
  *
  * get_header_textcolor() options: Hide text (returns 'blank'), or any hex value.
  *
- * @since Varahi 1.0
+ * @since Quasar Theme 1.0
  */
-function varahi_header_style() {
+function quasartheme_header_style() {
 	$header_image = get_header_image();
 	$text_color   = get_header_textcolor();
 
@@ -112,7 +112,7 @@ function varahi_header_style() {
 
 	// If we get this far, we have custom styles.
 	?>
-	<style type="text/css" id="varahi-header-css">
+	<style type="text/css" id="quasartheme-header-css">
 	<?php
 		if ( ! empty( $header_image ) ) :
 	?>
@@ -156,12 +156,12 @@ function varahi_header_style() {
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @since Varahi 1.0
+ * @since Quasar Theme 1.0
  */
-function varahi_admin_header_style() {
+function quasartheme_admin_header_style() {
 	$header_image = get_header_image();
 ?>
-	<style type="text/css" id="varahi-admin-header-css">
+	<style type="text/css" id="quasartheme-admin-header-css">
 	.appearance_page_custom-header #headimg {
 		border: none;
 		-webkit-box-sizing: border-box;
@@ -221,9 +221,9 @@ function varahi_admin_header_style() {
  * Outputs markup to be displayed on the Appearance > Header admin panel.
  * This callback overrides the default markup displayed there.
  *
- * @since Varahi 1.0
+ * @since Quasar Theme 1.0
  */
-function varahi_admin_header_image() {
+function quasartheme_admin_header_image() {
 	?>
 	<div id="headimg" style="background: url(<?php header_image(); ?>) no-repeat scroll top; background-size: 1920px auto;">
 		<?php $style = ' style="color:#' . get_header_textcolor() . ';"'; ?>

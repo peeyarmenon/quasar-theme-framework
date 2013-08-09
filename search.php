@@ -3,8 +3,8 @@
  * The template for displaying Search Results pages.
  *
  * @package WordPress
- * @subpackage Varahi
- * @since Varahi 1.0
+ * @subpackage Quasar Theme
+ * @since Quasar Theme 1.0
  */
 
 get_header(); ?>
@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'varahi' ), get_search_query() ); ?></h1>
+				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'quasartheme' ), get_search_query() ); ?></h1>
 			</header>
 
 			<?php /* The loop */ ?>
@@ -23,7 +23,7 @@ get_header(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
 			<?php endwhile; ?>
 
-			<?php varahi_paging_nav(); ?>
+			<?php quasartheme_paging_nav(); ?>
 
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>

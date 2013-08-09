@@ -3,21 +3,21 @@
  * The template for displaying Author bios.
  *
  * @package WordPress
- * @subpackage Varahi
- * @since Varahi 1.0
+ * @subpackage Quasar Theme
+ * @since Quasar Theme 1.0
  */
 ?>
 
 <div class="author-info">
 	<div class="author-avatar">
-		<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'varahi_author_bio_avatar_size', 74 ) ); ?>
+		<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'quasartheme_author_bio_avatar_size', 74 ) ); ?>
 	</div><!-- .author-avatar -->
 	<div class="author-description">
-		<h2 class="author-title"><?php printf( __( 'About %s', 'varahi' ), get_the_author() ); ?></h2>
+		<h2 class="author-title"><?php printf( __( 'About %s', 'quasartheme' ), get_the_author() ); ?></h2>
 		<p class="author-bio">
 			<?php the_author_meta( 'description' ); ?>
 			<a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-				<?php printf( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'varahi' ), get_the_author() ); ?>
+				<?php printf( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'quasartheme' ), get_the_author() ); ?>
 			</a>
 		</p>
 	</div><!-- .author-description -->

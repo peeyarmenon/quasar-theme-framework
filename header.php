@@ -5,8 +5,8 @@
  * Displays all of the <head> section and everything up till <div id="main">
  *
  * @package WordPress
- * @subpackage Varahi
- * @since Varahi 1.0
+ * @subpackage Quasar Theme
+ * @since Quasar Theme 1.0
  */
 ?><!DOCTYPE html>
 <!--[if IE 7]>
@@ -41,8 +41,8 @@
 
 		<div id="navbar" class="navbar">
 			<nav id="site-navigation" class="navigation main-navigation" role="navigation">
-				<h3 class="menu-toggle"><?php _e( 'Menu', 'varahi' ); ?></h3>
-				<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'varahi' ); ?>"><?php _e( 'Skip to content', 'varahi' ); ?></a>
+				<h3 class="menu-toggle"><?php _e( 'Menu', 'quasartheme' ); ?></h3>
+				<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'quasartheme' ); ?>"><?php _e( 'Skip to content', 'quasartheme' ); ?></a>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 				<?php get_search_form(); ?>
 			</nav><!-- #site-navigation -->
