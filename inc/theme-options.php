@@ -28,7 +28,9 @@ function quasartheme_display() {
 		<?php
 		if ( isset( $_GET[ 'tab' ])) {
 			$active_tab = $_GET[ 'tab' ];
-		} // end if
+		} else {
+			$active_tab = 'settings_home';
+		}// end if
 		?>
 
 		<h2 class="nav-tab-wrapper">

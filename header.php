@@ -36,6 +36,9 @@
 		$social_options = get_option( 'quasartheme_social_options' );
 	?>
 	<div id="page" class="hfeed site">
+		<!-- __________________________________ -->
+		<!-- Options / Settings API tests START -->
+		<!-- __________________________________ -->
 		<?php if ( $general_options[ 'show_header' ] ) { ?>
 			<header id="masthead" class="site-header" role="banner">
 				<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
@@ -48,6 +51,9 @@
 		<?php echo $social_options['twitter'] ? '<a href="' . $social_options['twitter'] . '">Twitter</a>' : ''; ?>
 		<?php echo $social_options['facebook'] ? '<a href="' . $social_options['facebook'] . '">Facebook</a>' : ''; ?>
 		<?php echo $social_options['googleplus'] ? '<a href="' . $social_options['googleplus'] . '">Google+</a>' : ''; ?>
+		<!-- __________________________________ -->
+		<!-- Options / Settings API tests END -->
+		<!-- __________________________________ -->
 
 		<div id="navbar" class="navbar">
 			<nav id="site-navigation" class="navigation main-navigation" role="navigation">
