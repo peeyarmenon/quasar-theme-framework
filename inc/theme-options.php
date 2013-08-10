@@ -25,19 +25,34 @@ function quasartheme_display() {
 		<h2>Quasar Theme Options</h2>
 		<?php settings_errors(); ?>
 
+		<?php
+		if ( isset( $_GET[ 'tab' ])) {
+			$active_tab = $_GET[ 'tab' ];
+		} // end if
+		?>
+
 		<h2 class="nav-tab-wrapper">
-			<a href="#" class="nav-tab">General Options</a>
-			<a href="#" class="nav-tab">Social Options</a>
+			<a href="?page=quasartheme_options&tab=settings_home" class="nav-tab <?php echo $active_tab == 'settings_home' ? 'nav-tab-active' : ''; ?>">Home</a>
+			<a href="?page=quasartheme_options&tab=general_options" class="nav-tab <?php echo $active_tab == 'general_options' ? 'nav-tab-active' : ''; ?>">General Settings</a>
+			<a href="?page=quasartheme_options&tab=color_options" class="nav-tab <?php echo $active_tab == 'color_options' ? 'nav-tab-active' : ''; ?>">Color Settings</a>
+			<a href="?page=quasartheme_options&tab=social_options" class="nav-tab <?php echo $active_tab == 'social_options' ? 'nav-tab-active' : ''; ?>">Social Settings</a>
+			<a href="?page=quasartheme_options&tab=widget_options" class="nav-tab <?php echo $active_tab == 'widget_options' ? 'nav-tab-active' : ''; ?>">Widget Settings</a>
+			<a href="?page=quasartheme_options&tab=posttypes_options" class="nav-tab <?php echo $active_tab == 'posttypes_options' ? 'nav-tab-active' : ''; ?>">Post Types</a>
+			<a href="?page=quasartheme_options&tab=location_options" class="nav-tab <?php echo $active_tab == 'location_options' ? 'nav-tab-active' : ''; ?>">Location Settings</a>
 		</h2>
 		
 		<form method="post" action="options.php">
-			<?php settings_fields( 'quasartheme_general_options' ); ?>
-			<?php do_settings_sections( 'quasartheme_general_options' ); ?>
+			<?php
+				if ( $active_tab == 'general_options' ) {
+					settings_fields( 'quasartheme_general_options' );
+					do_settings_sections( 'quasartheme_general_options' );
+				} else if ( $active_tab == 'social_options' ) {
+					settings_fields( 'quasartheme_social_options' );
+					do_settings_sections( 'quasartheme_social_options' );
+				}
 
-			<?php settings_fields( 'quasartheme_social_options' ); ?>
-			<?php do_settings_sections( 'quasartheme_social_options' ); ?>
-
-			<?php submit_button(); ?>
+				submit_button();
+			?>
 		</form>
 		
 	</div><!-- /.wrap -->
