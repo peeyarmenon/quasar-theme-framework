@@ -23,11 +23,11 @@ function quasartheme_custom_header_setup() {
 	$args = array(
 		// Text color and image (empty to use none).
 		'default-text-color'     => '0e1922',
-		'default-image'          => '%s/images/headers/rainbow.png',
+		'default-image'          => '%s/images/headers/default-header.png',
 
 		// Set height and width, with a maximum value for the width.
 		'height'                 => 230,
-		'width'                  => 1920, // 1600,
+		'width'                  => 1920,
 
 		// Callbacks for styling the header and the admin preview.
 		'wp-head-callback'       => 'quasartheme_header_style',
@@ -43,40 +43,10 @@ function quasartheme_custom_header_setup() {
 	 */
 	register_default_headers( array(
 		'rainbow' => array(
-			'url'           => '%s/images/headers/rainbow.png',
-			'thumbnail_url' => '%s/images/headers/rainbow-thumbnail.png',
-			'description'   => _x( 'Rainbow Stripes', 'header image description', 'quasartheme' )
-		),
-		'3dwall' => array(
-			'url'           => '%s/images/headers/3dwall.png',
-			'thumbnail_url' => '%s/images/headers/3dwall-thumbnail.png',
-			'description'   => _x( '3D Wall', 'header image description', 'quasartheme' )
-		),
-		'bokeh' => array(
-			'url'           => '%s/images/headers/bokeh.png',
-			'thumbnail_url' => '%s/images/headers/bokeh-thumbnail.png',
-			'description'   => _x( 'Bokeh', 'header image description', 'quasartheme' )
-		),
-		'fluidwave' => array(
-			'url'           => '%s/images/headers/fluidwave.png',
-			'thumbnail_url' => '%s/images/headers/fluidwave-thumbnail.png',
-			'description'   => _x( 'Fluid Wave', 'header image description', 'quasartheme' )
-		),
-		'glassy' => array(
-			'url'           => '%s/images/headers/glassy.png',
-			'thumbnail_url' => '%s/images/headers/glassy-thumbnail.png',
-			'description'   => _x( 'Glassy', 'header image description', 'quasartheme' )
-		),
-		'mystical' => array(
-			'url'           => '%s/images/headers/mystical.png',
-			'thumbnail_url' => '%s/images/headers/mystical-thumbnail.png',
-			'description'   => _x( 'Mystical', 'header image description', 'quasartheme' )
-		),
-		'scifi' => array(
-			'url'           => '%s/images/headers/scifi.png',
-			'thumbnail_url' => '%s/images/headers/scifi-thumbnail.png',
-			'description'   => _x( 'Sci Fi', 'header image description', 'quasartheme' )
-		),
+			'url'           => '%s/images/headers/default-header.png',
+			'thumbnail_url' => '%s/images/headers/default-header-thumbnail.png',
+			'description'   => _x( 'Default Header Image', 'header image description', 'quasartheme' )
+		)
 	) );
 }
 add_action( 'after_setup_theme', 'quasartheme_custom_header_setup' );

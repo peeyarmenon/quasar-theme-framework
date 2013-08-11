@@ -45,10 +45,10 @@ $link-visited-color:	#045eac !default;
 // -------------------------
 
 $font-family-sans-serif:  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       'Abril Fatface', Georgia, "Times New Roman", Times, serif !default;
+// $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
-$font-family-alt:		  $font-family-serif !default;
+$font-family-alt:		  'Lato', 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default; // $font-family-serif !default;
 
 $font-size-base:          14px !default;
 $font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
@@ -58,7 +58,7 @@ $font-size-mini:          ceil($font-size-base * 0.75) !default; // ~11px
 $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~20px
 
-$headings-font-weight:    400 !default;
+$headings-font-weight:    300 !default;
 $headings-line-height:    1.1 !default;
 
 // Components
@@ -122,8 +122,8 @@ $input-active-border:            #abb8c3 !default; // #ccc !default;
 // Dropdowns
 // -------------------------
 
-$dropdown-bg:                    #fff !default;
-$dropdown-border:                rgba(0,0,0,.15) !default;
+$dropdown-bg:                    #000 !default;
+$dropdown-border:                #fff !default;
 $dropdown-divider-top:           #e5e5e5 !default;
 $dropdown-divider-bottom:        #fff !default;
 
@@ -138,16 +138,16 @@ $dropdown-link-hover-bg:         $dropdown-link-active-bg !default;
 // -------------------------
 
 // Basics of a navbar
-$navbar-height:                    45px !default; // default --> 50px
+$navbar-height:                    45px !default;
 $navbar-color:                     #777 !default;
-$navbar-bg:                        #eee !default;
+$navbar-bg:                        #000 !default;
 
 // Navbar links
-$navbar-link-color:                $nav-link !default; // default --> #777
-$navbar-link-hover-color:          $nav-link-hover !default; // default --> #333
+$navbar-link-color:                $nav-link !default;
+$navbar-link-hover-color:          $nav-link-hover !default;
 $navbar-link-hover-bg:             transparent !default;
-$navbar-link-active-color:         $nav-link-hover !default; // default --> #555
-$navbar-link-active-bg:            transparent !default; // default --> darken($navbar-bg, 10%)
+$navbar-link-active-color:         $nav-link-hover !default;
+$navbar-link-active-bg:            transparent !default;
 
 $navbar-link-disabled-color:       #ccc !default;
 $navbar-link-disabled-bg:          transparent !default;

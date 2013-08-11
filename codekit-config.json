@@ -13,16 +13,14 @@
       "initialSize" : 54593,
       "fileType" : 8192
     },
-    "\/images\/headers\/bokeh.png" : {
+    "\/sidebar.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/bokeh.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/bokeh.png",
-      "initialSize" : 706725,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/sidebar.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/category.php" : {
       "ignoreWasSetByUser" : 0,
@@ -60,15 +58,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/scss\/partials\/content\/_search-noposts.scss" : {
+    "\/scss\/partials\/content\/post-formats\/_chat.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/partials\/content\/_search-noposts.scss",
+      "inputAbbreviatedPath" : "\/scss\/partials\/content\/post-formats\/_chat.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_search-noposts.css",
+      "outputAbbreviatedPath" : "\/css\/_chat.css",
       "fileType" : 4,
       "debugStyle" : 2
     },
@@ -84,15 +82,35 @@
       "fileType" : 4,
       "debugStyle" : 2
     },
-    "\/scss\/partials\/content\/post-formats\/_chat.scss" : {
+    "\/js\/functions.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/functions.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/functions-ck.js",
+      "fileType" : 64
+    },
+    "\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/style.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/scss\/partials\/content\/_search-noposts.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/partials\/content\/post-formats\/_chat.scss",
+      "inputAbbreviatedPath" : "\/scss\/partials\/content\/_search-noposts.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_chat.css",
+      "outputAbbreviatedPath" : "\/css\/_search-noposts.css",
       "fileType" : 4,
       "debugStyle" : 2
     },
@@ -107,52 +125,12 @@
       "initialSize" : 85,
       "fileType" : 8192
     },
-    "\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/style.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/images\/headers\/bokeh-thumbnail.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/bokeh-thumbnail.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/bokeh-thumbnail.png",
-      "initialSize" : 706725,
-      "fileType" : 8192
-    },
     "\/content-audio.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/content-audio.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/js\/functions.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/functions.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/functions-ck.js",
-      "fileType" : 64
-    },
-    "\/sidebar.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sidebar.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -185,28 +163,6 @@
       "inputAbbreviatedPath" : "\/fonts\/genericons.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
-    },
-    "\/images\/headers\/rainbow.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/rainbow.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/rainbow.png",
-      "initialSize" : 220559,
-      "fileType" : 8192
-    },
-    "\/images\/headers\/mystical.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/mystical.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/mystical.png",
-      "initialSize" : 451778,
-      "fileType" : 8192
     },
     "\/scss\/partials\/content\/post-formats\/_quote.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -241,17 +197,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/images\/headers\/rainbow-thumbnail.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/rainbow-thumbnail.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/rainbow-thumbnail.png",
-      "initialSize" : 220559,
-      "fileType" : 8192
-    },
     "\/rtl.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -281,7 +226,7 @@
       "inputAbbreviatedPath" : "\/images\/search-icon.png",
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/search-icon.png",
-      "initialSize" : 422,
+      "initialSize" : 1337,
       "fileType" : 8192
     },
     "\/inc\/extras.php" : {
@@ -341,17 +286,6 @@
       "fileType" : 4,
       "debugStyle" : 2
     },
-    "\/images\/headers\/fluidwave.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/fluidwave.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/fluidwave.png",
-      "initialSize" : 1204222,
-      "fileType" : 8192
-    },
     "\/search.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -378,17 +312,6 @@
       "inputAbbreviatedPath" : "\/content-video.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
-    },
-    "\/images\/headers\/glassy-thumbnail.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/glassy-thumbnail.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/glassy-thumbnail.png",
-      "initialSize" : 357690,
-      "fileType" : 8192
     },
     "\/archive.php" : {
       "ignoreWasSetByUser" : 0,
@@ -435,6 +358,17 @@
       "fileType" : 4,
       "debugStyle" : 2
     },
+    "\/images\/headers\/default-header.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/headers\/default-header.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/headers\/default-header.png",
+      "initialSize" : 11489,
+      "fileType" : 8192
+    },
     "\/scss\/partials\/content\/_entry-content.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -447,17 +381,6 @@
       "fileType" : 4,
       "debugStyle" : 2
     },
-    "\/images\/headers\/scifi-thumbnail.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/scifi-thumbnail.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/scifi-thumbnail.png",
-      "initialSize" : 1255157,
-      "fileType" : 8192
-    },
     "\/scss\/style.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -467,18 +390,6 @@
       "outputStyle" : 1,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/style.css",
-      "fileType" : 4,
-      "debugStyle" : 2
-    },
-    "\/scss\/partials\/content\/_media-elements.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/partials\/content\/_media-elements.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_media-elements.css",
       "fileType" : 4,
       "debugStyle" : 2
     },
@@ -500,6 +411,18 @@
       "outputStyle" : 1,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/_author-bio.css",
+      "fileType" : 4,
+      "debugStyle" : 2
+    },
+    "\/scss\/partials\/content\/_media-elements.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/partials\/content\/_media-elements.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_media-elements.css",
       "fileType" : 4,
       "debugStyle" : 2
     },
@@ -625,17 +548,6 @@
       "fileType" : 4,
       "debugStyle" : 2
     },
-    "\/images\/headers\/3dwall.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/3dwall.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/3dwall.png",
-      "initialSize" : 360175,
-      "fileType" : 8192
-    },
     "\/scss\/partials\/_footer.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -705,27 +617,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/images\/headers\/mystical-thumbnail.png" : {
+    "\/scss\/partials\/content\/post-formats\/_gallery.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/mystical-thumbnail.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/mystical-thumbnail.png",
-      "initialSize" : 451778,
-      "fileType" : 8192
-    },
-    "\/images\/headers\/glassy.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/glassy.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/glassy.png",
-      "initialSize" : 357690,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/scss\/partials\/content\/post-formats\/_gallery.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_gallery.css",
+      "fileType" : 4,
+      "debugStyle" : 2
     },
     "\/images\/dotted-line-light.png" : {
       "ignoreWasSetByUser" : 0,
@@ -738,17 +640,14 @@
       "initialSize" : 80,
       "fileType" : 8192
     },
-    "\/scss\/partials\/content\/post-formats\/_gallery.scss" : {
+    "\/index.php" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/partials\/content\/post-formats\/_gallery.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_gallery.css",
-      "fileType" : 4,
-      "debugStyle" : 2
+      "inputAbbreviatedPath" : "\/index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/scss\/partials\/_sidebar.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -783,15 +682,6 @@
       "fileType" : 4,
       "debugStyle" : 2
     },
-    "\/index.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/content-status.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -809,6 +699,17 @@
       "inputAbbreviatedPath" : "\/css\/style.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/images\/headers\/default-header-thumbnail.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/headers\/default-header-thumbnail.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/headers\/default-header-thumbnail.png",
+      "initialSize" : 1085,
+      "fileType" : 8192
     },
     "\/page.php" : {
       "ignoreWasSetByUser" : 0,
@@ -831,15 +732,6 @@
       "fileType" : 4,
       "debugStyle" : 2
     },
-    "\/inc\/sidebar-inits.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/inc\/sidebar-inits.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/scss\/partials\/_main-navigation.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -851,6 +743,15 @@
       "outputAbbreviatedPath" : "\/css\/_main-navigation.css",
       "fileType" : 4,
       "debugStyle" : 2
+    },
+    "\/inc\/sidebar-inits.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/inc\/sidebar-inits.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/js\/html5.js" : {
       "ignoreWasSetByUser" : 0,
@@ -946,6 +847,26 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/images\/search-icon-2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/search-icon-2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/search-icon-2x.png",
+      "initialSize" : 1835,
+      "fileType" : 8192
+    },
+    "\/config.rb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 32768
+    },
     "\/scss\/partials\/content\/post-formats\/_status.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -957,37 +878,6 @@
       "outputAbbreviatedPath" : "\/css\/_status.css",
       "fileType" : 4,
       "debugStyle" : 2
-    },
-    "\/config.rb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 32768
-    },
-    "\/images\/search-icon-2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/search-icon-2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/search-icon-2x.png",
-      "initialSize" : 829,
-      "fileType" : 8192
-    },
-    "\/images\/headers\/fluidwave-thumbnail.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/fluidwave-thumbnail.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/fluidwave-thumbnail.png",
-      "initialSize" : 1204222,
-      "fileType" : 8192
     },
     "\/css\/ie.css" : {
       "ignoreWasSetByUser" : 0,
@@ -1018,17 +908,6 @@
       "inputAbbreviatedPath" : "\/functions.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
-    },
-    "\/images\/headers\/3dwall-thumbnail.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/3dwall-thumbnail.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/3dwall-thumbnail.png",
-      "initialSize" : 23307,
-      "fileType" : 8192
     },
     "\/js\/functions-ck.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1094,17 +973,6 @@
       "inputAbbreviatedPath" : "\/sidebar-main.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
-    },
-    "\/images\/headers\/scifi.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/headers\/scifi.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/headers\/scifi.png",
-      "initialSize" : 1890102,
-      "fileType" : 8192
     },
     "\/js\/theme-customizer.js" : {
       "ignoreWasSetByUser" : 0,

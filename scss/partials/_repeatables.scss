@@ -115,7 +115,7 @@ input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus {
-	background: #3195ed; // #ed6a31; /* Old browsers */
+	background: #3195ed; /* Old browsers */
 	@include background-image(linear-gradient(#3195ed, #278ce5));
 	outline: none;
 }
@@ -124,10 +124,10 @@ button:active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
-	background: #127cd9; // #d94412; /* Old browsers */
+	background: #127cd9; /* Old browsers */
 	@include background-image(linear-gradient(#127cd9, $btn-primary-bg));
 	border: none;
-	border-top: 3px solid $btn-primary-border; // #b93207;
+	border-top: 3px solid $btn-primary-border;
 	padding: 10px 24px 11px;
 }
 
@@ -242,7 +242,7 @@ img.alignnone {
 .wp-caption .wp-caption-text,
 .entry-caption,
 .gallery-caption {
-	color: #0e1922; // #220e10;
+	color: #0e1922;
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 300;

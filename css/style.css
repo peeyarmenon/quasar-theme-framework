@@ -105,9 +105,9 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: "Abril Fatface", Georgia, "Times New Roman", Times, serif;
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.3;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* line 96, ../scss/partials/_reset.scss */
@@ -657,6 +657,7 @@ input[type="submit"]:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus {
   background: #3195ed;
+  /* Old browsers */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3195ed), color-stop(100%, #278ce5));
   background-image: -webkit-linear-gradient(#3195ed, #278ce5);
   background-image: -moz-linear-gradient(#3195ed, #278ce5);
@@ -671,6 +672,7 @@ input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
   background: #127cd9;
+  /* Old browsers */
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #127cd9), color-stop(100%, #2287e0));
   background-image: -webkit-linear-gradient(#127cd9, #2287e0);
   background-image: -moz-linear-gradient(#127cd9, #2287e0);
@@ -848,12 +850,12 @@ img.wp-smiley,
   width: 100%;
 }
 
-/* line 15, ../scss/partials/_structure.scss */
+/* line 11, ../scss/partials/_structure.scss */
 .site-main {
   position: relative;
 }
 
-/* line 19, ../scss/partials/_structure.scss */
+/* line 15, ../scss/partials/_structure.scss */
 .site-main .sidebar-container {
   height: 0;
   position: absolute;
@@ -862,7 +864,7 @@ img.wp-smiley,
   z-index: 1;
 }
 
-/* line 27, ../scss/partials/_structure.scss */
+/* line 23, ../scss/partials/_structure.scss */
 .site-main .sidebar-inner {
   margin: 0 auto;
   max-width: 1040px;
@@ -892,22 +894,28 @@ img.wp-smiley,
 
 /* line 21, ../scss/partials/_site-header.scss */
 .site-header .site-title:hover {
-  text-decoration: underline;
+  color: #2990ea;
 }
 
 /* line 25, ../scss/partials/_site-header.scss */
 .site-title {
   font-size: 60px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
   margin: 0;
   padding: 58px 0 10px;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  text-transform: capitalize;
 }
 
-/* line 33, ../scss/partials/_site-header.scss */
+/* line 35, ../scss/partials/_site-header.scss */
 .site-description {
   font: 300 italic 24px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  text-transform: capitalize;
 }
 
 /**
@@ -938,7 +946,7 @@ div.nav-menu > ul {
 
 /* line 24, ../scss/partials/_main-navigation.scss */
 .nav-menu li a {
-  color: #121314;
+  color: #cccccc;
   display: block;
   font-size: 15px;
   line-height: 1;
@@ -949,24 +957,24 @@ div.nav-menu > ul {
 /* line 34, ../scss/partials/_main-navigation.scss */
 .nav-menu li:hover > a,
 .nav-menu li a:hover {
-  background-color: #0e1922;
-  color: #fff;
+  background-color: transparent;
+  color: #086fca;
 }
 
 /* line 40, ../scss/partials/_main-navigation.scss */
 .nav-menu .sub-menu,
 .nav-menu .children {
-  background-color: #0e1922;
-  border: 2px solid #e7f0f7;
+  background-color: black;
+  border: none;
   border-top: 0;
   display: none;
   padding: 0;
   position: absolute;
-  left: -2px;
+  left: 0;
   z-index: 99999;
 }
 
-/* line 52, ../scss/partials/_main-navigation.scss */
+/* line 54, ../scss/partials/_main-navigation.scss */
 .nav-menu .sub-menu ul,
 .nav-menu .children ul {
   border-left: 0;
@@ -974,56 +982,58 @@ div.nav-menu > ul {
   top: 0;
 }
 
-/* line 59, ../scss/partials/_main-navigation.scss */
+/* line 61, ../scss/partials/_main-navigation.scss */
 ul.nav-menu ul a,
 .nav-menu ul ul a {
-  color: #fff;
+  color: #cccccc;
   margin: 0;
   width: 200px;
 }
 
-/* line 66, ../scss/partials/_main-navigation.scss */
+/* line 68, ../scss/partials/_main-navigation.scss */
 ul.nav-menu ul a:hover,
 .nav-menu ul ul a:hover {
-  background-color: #2f8bdb;
+  background-color: #086fca;
+  color: white;
 }
 
-/* line 72, ../scss/partials/_main-navigation.scss */
+/* line 74, ../scss/partials/_main-navigation.scss */
 ul.nav-menu li:hover > ul,
 .nav-menu ul li:hover > ul {
   display: block;
 }
 
-/* line 79, ../scss/partials/_main-navigation.scss */
+/* line 81, ../scss/partials/_main-navigation.scss */
 .nav-menu .current_page_item > a,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-  color: #0a69bc;
+  color: #086fca;
+  background: transparent;
   font-style: italic;
 }
 
-/* line 85, ../scss/partials/_main-navigation.scss */
+/* line 87, ../scss/partials/_main-navigation.scss */
 .menu-toggle {
   display: none;
 }
 
 /* Navbar */
-/* line 90, ../scss/partials/_main-navigation.scss */
+/* line 92, ../scss/partials/_main-navigation.scss */
 .navbar {
-  background-color: #e7f0f7;
+  background-color: black;
   margin: 0 auto;
   width: 100%;
 }
 
-/* line 97, ../scss/partials/_main-navigation.scss */
+/* line 98, ../scss/partials/_main-navigation.scss */
 .navbar .search-form {
   position: absolute;
   right: 20px;
   top: 1px;
 }
 
-/* line 103, ../scss/partials/_main-navigation.scss */
+/* line 104, ../scss/partials/_main-navigation.scss */
 .navbar .search-field {
   background-color: transparent;
   background-image: url(../images/search-icon.png);
@@ -1043,7 +1053,7 @@ ul.nav-menu li:hover > ul,
   width: 0;
 }
 
-/* line 119, ../scss/partials/_main-navigation.scss */
+/* line 120, ../scss/partials/_main-navigation.scss */
 .navbar .search-field:focus {
   background-color: #fff;
   border: 2px solid #abb8c3;
@@ -1102,7 +1112,7 @@ ul.nav-menu li:hover > ul,
 
 /* line 19, ../scss/partials/content/_entry-header.scss */
 .entry-title {
-  font-weight: normal;
+  font-weight: 300;
   margin: 0 0 5px;
   -ms-word-break: break-all;
   word-break: break-all;

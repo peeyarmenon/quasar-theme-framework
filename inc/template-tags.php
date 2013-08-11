@@ -226,25 +226,25 @@ if ( ! function_exists( 'quasartheme_fonts_url' ) ) :
 		$fonts_url = '';
 
 		/* Translators: If there are characters in your language that are not
+		 * supported by Lato, translate this to 'off'. Do not translate
+		 * into your own language.
+		 */
+		$lato = _x( 'on', 'Lato font: on or off', 'quasartheme' );
+
+		/* Translators: If there are characters in your language that are not
 		 * supported by Open Sans, translate this to 'off'. Do not translate
 		 * into your own language.
 		 */
 		$open_sans = _x( 'on', 'Open Sans font: on or off', 'quasartheme' );
 
-		/* Translators: If there are characters in your language that are not
-		 * supported by Neuton, translate this to 'off'. Do not translate into your
-		 * own language.
-		 */
-		$abril_fatface = _x( 'on', 'Neuton font: on or off', 'quasartheme' );
-
-		if ( 'off' !== $open_sans || 'off' !== $abril_fatface ) {
+		if ( 'off' !== $lato || 'off' !== $open_sans ) {
 			$font_families = array();
+
+			if ( 'off' !== $lato )
+				$font_families[] = 'Lato:100,300,400,700,100italic,300italic,400italic,700italic';
 
 			if ( 'off' !== $open_sans )
 				$font_families[] = 'Open Sans:300,400,700,300italic,400italic,700italic';
-
-			if ( 'off' !== $abril_fatface )
-				$font_families[] = 'Abril Fatface';
 
 			$query_args = array(
 				'family' => urlencode( implode( '|', $font_families ) ),

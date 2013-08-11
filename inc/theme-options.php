@@ -314,7 +314,7 @@ function quasartheme_initialize_input_examples() {
 		'input_examples_section'			
 	);
 	
-	add_settings_field(
+	add_settings_field(	
 		'Checkbox Element',
 		__( 'Checkbox Element', 'sandbox' ),
 		'quasartheme_checkbox_element_callback',
@@ -322,7 +322,7 @@ function quasartheme_initialize_input_examples() {
 		'input_examples_section'
 	);
 	
-	add_settings_field(
+	add_settings_field(	
 		'Radio Button Elements',
 		__( 'Radio Button Elements', 'sandbox' ),
 		'quasartheme_radio_element_callback',
@@ -330,7 +330,7 @@ function quasartheme_initialize_input_examples() {
 		'input_examples_section'
 	);
 	
-	add_settings_field(
+	add_settings_field(	
 		'Select Element',
 		__( 'Select Element', 'sandbox' ),
 		'quasartheme_select_element_callback',
@@ -495,7 +495,7 @@ function quasartheme_checkbox_element_callback() {
 
 	$options = get_option( 'quasartheme_input_examples' );
 	
-	$html = '<input type="checkbox" id="checkbox_example" name="quasartheme_input_examples[checkbox_example]" value="1"' . checked( 1, $options['checkbox_example'], false ) . '/>';
+	$html = '<input type="checkbox" id="checkbox_example" name="quasartheme_input_examples[checkbox_example]" value="1"' . checked( 1, isset( $options['checkbox_example'] ) ? $options['checkbox_example'] : 0, false ) . '/>';
 	$html .= '&nbsp;';
 	$html .= '<label for="checkbox_example">This is an example of a checkbox</label>';
 	

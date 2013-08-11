@@ -8,7 +8,7 @@
 }
 
 .site-header .home-link {
-	color: $text-color; // #141412;
+	color: $text-color;
 	display: block;
 	margin: 0 auto;
 	max-width: 1080px;
@@ -19,7 +19,7 @@
 }
 
 .site-header .site-title:hover {
-	text-decoration: underline;
+	color: $link-hover-color;
 }
 
 .site-title {
@@ -28,9 +28,12 @@
 	line-height: 1;
 	margin: 0;
 	padding: 58px 0 10px;
+	@include transition(all 400ms ease-out);
+	text-transform: capitalize;
 }
 
 .site-description {
 	font: 300 italic 24px $font-family-base;
 	margin: 0;
+	text-transform: capitalize;
 }
