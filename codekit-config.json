@@ -102,6 +102,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/images\/dotted-line-light-2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/dotted-line-light-2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/dotted-line-light-2x.png",
+      "initialSize" : 85,
+      "fileType" : 8192
+    },
     "\/scss\/partials\/content\/_search-noposts.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -113,17 +124,6 @@
       "outputAbbreviatedPath" : "\/css\/_search-noposts.css",
       "fileType" : 4,
       "debugStyle" : 2
-    },
-    "\/images\/dotted-line-light-2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/dotted-line-light-2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/dotted-line-light-2x.png",
-      "initialSize" : 85,
-      "fileType" : 8192
     },
     "\/content-audio.php" : {
       "ignoreWasSetByUser" : 0,
@@ -732,6 +732,15 @@
       "fileType" : 4,
       "debugStyle" : 2
     },
+    "\/inc\/sidebar-inits.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/inc\/sidebar-inits.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/scss\/partials\/_main-navigation.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -743,15 +752,6 @@
       "outputAbbreviatedPath" : "\/css\/_main-navigation.css",
       "fileType" : 4,
       "debugStyle" : 2
-    },
-    "\/inc\/sidebar-inits.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/inc\/sidebar-inits.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/js\/html5.js" : {
       "ignoreWasSetByUser" : 0,
@@ -858,15 +858,6 @@
       "initialSize" : 1835,
       "fileType" : 8192
     },
-    "\/config.rb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 32768
-    },
     "\/scss\/partials\/content\/post-formats\/_status.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -878,6 +869,15 @@
       "outputAbbreviatedPath" : "\/css\/_status.css",
       "fileType" : 4,
       "debugStyle" : 2
+    },
+    "\/config.rb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 32768
     },
     "\/css\/ie.css" : {
       "ignoreWasSetByUser" : 0,
